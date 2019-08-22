@@ -22,7 +22,12 @@
 #headerLogo {
     color: rgb(254, 254, 254);
     margin-left: 2rem;
+    
 
+}
+
+.logo {
+    text-decoration: none;
 }
 
 .nav {
@@ -34,6 +39,11 @@
 	justify-content: space-around;
 	align-items: center;
 	align-content: stretch;
+}
+.nav-link {
+    text-decoration: none;
+    color: rgb(254,254,254);
+    cursor: pointer;
 }
 
 .navPush {
@@ -112,16 +122,20 @@
 	justify-content: space-around;
 	align-items: center;
     align-content: stretch;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .paragraph {
-    width: 27.35%;
-    height: 80%;
+    width: 27.35vw;
+    height: 10vh;
     font-size: 12px;
-    overflow: hidden;
-    overflow-wrap: break-word;
+    overflow: auto;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 /*************************/
 /** 8.83% of Page **/
 .endOfPage {
