@@ -76,6 +76,7 @@ function iLove(nameParam, loveParam){
 const faveColors = ['red', 'green', 'black']
 
 //Code Here
+let colorCopy = [...faveColors];
 
 
 //////////////////PROBLEM 9////////////////////
@@ -83,6 +84,7 @@ const faveColors = ['red', 'green', 'black']
 // Add a fourth color to the end of the 'colorCopy' array using push
 
 //Code Here
+colorCopy.push('yellow');
 
 //////////////////PROBLEM 10////////////////////
 
@@ -90,25 +92,66 @@ const faveColors = ['red', 'green', 'black']
 const numbers = [1, 2, 3, 4, 5]
 
 //Code Here
+let middleNums = numbers.slice(1, 4);
 
 //////////////////PROBLEM 11////////////////////
 
-// Create an object called 'me' that has these keys with the correct values: firstName, state, age, greeter. firstName will be your name as a string. state will be your current state or providence as a string. age will be your age as a number. greeter will be a method that returns the string 'Hello! My name is NAMEVALUE and I live in STATEVALUE' with the correct values
+// Create an object called 'me' that has these keys with the correct values: 
+// firstName, state, age, greeter. firstName will be your name as a string. 
+// state will be your current state or providence as a string. age will be your 
+// age as a number. greeter will be a method that returns the string 
+// 'Hello! My name is NAMEVALUE and I live in STATEVALUE' with the correct values
 
 //Code Here
+let me = {
+	firstName : "Ben",
+	state : "Utah",
+	age : 26,
+	greeter : function () {
+		return `Hello! My name is ${firstName} and I live in ${state}`
+	}
+
+}
 
 //////////////////PROBLEM 12////////////////////
 
-// Create a function called 'bigOrSmall' that takes in one parameter, arr. Create a new array inside of bigOrSmall called 'answers'. Loop over the passed in arr param. If the number is GREATER than 100, push 'big' as a string to the answers array. If the number is LESS than or EQUAL to 100, push 'small' as a string to the answers array. Return the answers array inside of the function
+// Create a function called 'bigOrSmall' that takes in one parameter, 
+// arr. Create a new array inside of bigOrSmall called 'answers'. Loop over the passed in arr param. If the number is GREATER than 100, push 'big' as a string to the answers array.
+//  If the number is LESS than or EQUAL to 100, push 'small' as a string to the answers array. Return the answers array inside of the function
 
 // Code here
+function bigOrSmall(arr) {
+	let answer = [];
+
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i] > 100){
+			answer.push('big');
+		}
+		else {
+			answer.push('small');
+		}
+	}
+
+	return answer;
+}
+
 
 //////////////////PROBLEM 13////////////////////
 
-// Create a function called 'arrayReverser' that takes in one parameter, arr. Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array in reverse and add each item to the new reversed array. Finally, return the new reversed array
+// Create a function called 'arrayReverser' that takes in one parameter, arr. 
+// Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array in reverse 
+// and add each item to the new reversed array. Finally, return the new reversed array
 
 //Code Here
+function arrayReverser (arr) {
+	let reversed = [];
 
+	for (let i = arr.length - 1; i >= 0; i--) {
+		reversed.push(arr[i]);
+	}
+
+	return reversed;
+}
 //////////////////PROBLEM 14 - 18 Setup////////////////////
 
 // Below is an array, myNumbers. We will be using .map, .filter, .reduce and .forEach to manipulate the array in some form
@@ -120,18 +163,27 @@ const myNumbers = [3, 55, 788, 2, 1]
 // First, let's use .map to create a new array that doubles each number. Call the new array 'doubled'
 
 // Code Here
+let doubled = myNumbers.map(function(x) {
+	return x * 2;
+});
 
 //////////////////PROBLEM 15////////////////////
 
 // Now lets use .filter to only get the nubmer(s) greater than 100. Call the new array 'filtered'
 
 // Code Here
+let filtered = myNumbers.filter(function(x){
+	return x > 100;
+})
 
 //////////////////PROBLEM 16////////////////////
 
 // Next up, reduce to get the total of the array. call the new array 'total'
 
 // Code Here
+let total = myNumbers.reduce(function (acc, val){
+	return acc + val;
+})
 
 //////////////////PROBLEM 17////////////////////
 
