@@ -1,0 +1,131 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/** Header Bar of Page**/
+/** 4.76% of Page **/
+.headerBar {
+    height: 4.76vh;
+    width: 100vw;
+    background-color: rgb(112, 112, 112);
+
+    /** Lets center on logo and navlinks center, on the far left and right of the header **/
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+
+#headerLogo {
+    color: rgb(254, 254, 254);
+    margin-left: 2rem;
+
+}
+
+.nav {
+    margin-right: 4rem;
+    color: rgb(254,254,254);
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+
+.navPush {
+    margin-right: 1.5em;
+}
+
+/*********************/
+
+/** PSA Black Box **/
+/** 27.47% of Page **/
+.PSA {
+    height: 27.47vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.TMYK {
+    color: rgb(232, 223, 115);
+    font-size: 3rem;
+}
+/********************/
+
+/** Main Content Section **/
+/** 58.91% of Page **/
+.mainContent {
+    height: 58.91vh;
+    width: 100vw;
+    background-color: #ffffff
+}
+
+.gBox {
+    background-color: rgb(184, 252, 217);
+    height: 15vh;
+    width: 25%;
+    border-radius: 20px;
+
+}
+
+.greenBoxes {
+    height: 33%;
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+
+.orangeBoxes {
+    height: 33%;
+    width: 100%;
+    /** Space children elements around the center of the box **/
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+
+.oBox {
+    background-color: rgb(246, 196, 122);
+    height: 15vh;
+    width: 40%;
+}
+
+.textAndPic {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: stretch;
+    overflow: auto;
+}
+
+.paragraph {
+    width: 27.35%;
+    height: 80%;
+    font-size: 12px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+/*************************/
+/** 8.83% of Page **/
+.endOfPage {
+    background-color: rgb(58, 59, 84);
+    height: 8.83vh;
+    width: 100vw;
+}
